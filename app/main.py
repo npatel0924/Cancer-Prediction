@@ -196,7 +196,7 @@ def main():
     with st.container():
         # title and description of the app
         st.title("Malignancy Predictor For Breast Cancer")
-        st.write("This app uses machine learning to predict if a mass is benign or malignant based on breast cancer tissue measurements from a cytosis lab. These mesurments can be adjusted using the sidebar to the right and the model has an accuracy of 97%. This model was trained using the Breast Cancer Wisconsin (Diagnostic) Data Set from Kaggle provided by UCI MACHINE LEARNING. This project is for EDUCATIONAL USE ONLY and should NOT be used for real cancer diagosis without the supervision of a doctor.")
+        st.write("This app uses machine learning to predict if a mass is benign or malignant based on breast cancer tissue measurements from a cytosis lab. These mesurments can be adjusted using the sidebar to the right and the model has an accuracy of 97%. This model uses logistic regression and was trained using the Breast Cancer Wisconsin (Diagnostic) Data Set from Kaggle provided by UCI MACHINE LEARNING. This project is for EDUCATIONAL USE ONLY and should NOT be used for real cancer diagosis without the supervision of a doctor.")
 
         # columns for cell measurement visualization and prediction probabilites
         c1, c2 = st.columns([4,1])

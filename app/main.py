@@ -171,11 +171,11 @@ def getPred(input_data):
     if prediction[0] == 0:
         st.write("<span class='diagnosis benign'>Benign</span>", unsafe_allow_html=True)
     else:
-        st.write("<span class='diagnosis malicious'>Malicious</span>", unsafe_allow_html=True)
+        st.write("<span class='diagnosis malicious'>Malignant</span>", unsafe_allow_html=True)
         
     
     st.write("Probability of being benign: ", model.predict_proba(input_array_scaled)[0][0])
-    st.write("Probability of being malicious: ", model.predict_proba(input_array_scaled)[0][1])
+    st.write("Probability of being malignant: ", model.predict_proba(input_array_scaled)[0][1])
     
     st.write("This project is for EDUCATIONAL USE ONLY and should NOT be used for real cancer diagosis without the supervision of a doctor.")
 

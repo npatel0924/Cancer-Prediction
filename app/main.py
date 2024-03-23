@@ -177,7 +177,7 @@ def getPred(input_data):
     st.write("Probability of being benign: ", model.predict_proba(input_array_scaled)[0][0])
     st.write("Probability of being malicious: ", model.predict_proba(input_array_scaled)[0][1])
     
-    st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
+    st.write("This project is for EDUCATIONAL USE ONLY and should NOT be used for real cancer diagosis without the supervision of a doctor.")
 
 # main function to run app
 def main():
@@ -196,7 +196,7 @@ def main():
     with st.container():
         # title and description of the app
         st.title("Malignancy Predictor For Breast Cancer")
-        st.write("This app uses machine learning to predict if a mass is benign or malignant based on breast cancer tissue measurements from a cytosis lab. These mesurments can be adjusted using the sidebar to the right and the model has an accuracy of 97%. This model was trained using the Breast Cancer Wisconsin (Diagnostic) Data Set from Kaggle provided by UCI MACHINE LEARNING.")
+        st.write("This app uses machine learning to predict if a mass is benign or malignant based on breast cancer tissue measurements from a cytosis lab. These mesurments can be adjusted using the sidebar to the right and the model has an accuracy of 97%. This model was trained using the Breast Cancer Wisconsin (Diagnostic) Data Set from Kaggle provided by UCI MACHINE LEARNING. This project is for EDUCATIONAL USE ONLY and should NOT be used for real cancer diagosis without the supervision of a doctor.")
 
         # columns for cell measurement visualization and prediction probabilites
         c1, c2 = st.columns([4,1])
